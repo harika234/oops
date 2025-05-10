@@ -1,7 +1,9 @@
 package ZooManagementSystem;
 
 public class Monkey extends Animal{
-
+    public Monkey() {
+        super("Monkey");
+    }
 
     @Override
     public void eat() {
@@ -10,6 +12,6 @@ public class Monkey extends Animal{
 
     @Override
     public void makeSound() {
-        System.out.println("Monkey chatters!");
+        System.out.println("Monkey chatters");
     }
 }
