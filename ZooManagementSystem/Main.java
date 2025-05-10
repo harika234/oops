@@ -2,18 +2,17 @@ package ZooManagementSystem;
 
 public class Main {
     public static void main(String[] args) {
-        Animal animal;
+        Animal lion = new Lion();
+        Animal elephant = new Elephant();
+        Animal monkey = new Monkey();
 
-        animal = new Lion();
-        animal.eat();
-        animal.makeSound();
+        System.out.println("This is a " + lion.getAnimalName());
+        lion.makeSound();
 
-        animal = new Elephant();
-        animal.eat();
-        animal.makeSound();
+        System.out.println("This is a " + elephant.getAnimalName());
+        elephant.makeSound();
 
-        animal = new Monkey();
-        animal.eat();
-        animal.makeSound();
+        System.out.println("This is a " + monkey.getAnimalName());
+        monkey.makeSound();
     }
 }
